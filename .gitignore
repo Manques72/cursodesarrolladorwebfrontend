@@ -1,0 +1,5 @@
+# Excluimos una carpeta
+node_modules/
+# Excluimos una instruccion
+*.zzz
+ 
