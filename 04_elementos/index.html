@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Mariangeles Ocaña">
@@ -16,42 +17,192 @@
     </script>
     <script src="./js/app.js"></script>
 </head>
+
 <body>
-        
     <header>
-        <h1>Elementos de HTML</h1>
-        <nav>Documentos - Metadatos - Bloques</nav> 
+        <h1>Elementos de HTML 🙃 βα</h1>
+        <nav>Documentos - Metadatos - Bloques</nav>
     </header>
-           <section>
+        <div class="content-wrapper">
             <header>
-                    <h2>El Documento</h2>
-            </header>
-                <p>html</p>
-    </section>
-    <section>
-            <h2>Metadatos</h2>
-            <p>head, meta, title, link y script</p>
-    </section>
-    <section>
-        <header> 
             <h2>Elementos en bloque</h2>
         </header>
         <header>
-                <h3>Section</h3>
-        </header>       
-        
-        <p>Antes de HMTL5 : body, los encabezados (h1...h6) daban lugar al seccionado implicito</p>
-        <p>En HTML5 aparecen los elementos semanticos de seccionado explícito: section, header, footer, raw, article y aside</p>
+            <h3>Sectioning</h3>
+        </header>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eligendi exercitationem deserunt unde odio dicta porro magnam cumque accusantium sapiente, beatae autem laborum quibusdam itaque nam dolores! Facilis, in soluta.</p>
-    <p>Consequatur aliquam dolores reprehenderit quaerat totam in, nihil voluptatum expedita ipsum nobis corporis maiores ratione, iusto laborum optio! Dolore tenetur sit perferendis repellendus! Quis similique nemo doloribus numquam veniam impedit?</p>
-    <h3>Grouping</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ad, voluptatibus quo ratione repellat sed doloribus ut molestiae exercitationem vero at repudiandae magni aut facilis quaerat dolorum, voluptatum quas harum!</p>
-    <p>Rerum ab, sint quod illo magni voluptates commodi deserunt cumque ad. Voluptates perferendis amet error, tempore, aperiam voluptatum dolor cum doloremque facilis ducimus veniam quisquam corporis saepe? Tempore, nulla qui?</p>
-    <p>Facere sit quia, asperiores, autem culpa odit tempore, enim quam repellat architecto eum iste veniam soluta! Dolore culpa, ipsum cum nisi asperiores consequuntur mollitia sit vero at. Voluptatem, facilis voluptatum?</p>
+        <p>Antes de <abbr title="Hyper Text Markup Language 5">HMTL5 </abbr> : body, los encabezados (h1...h6) daban lugar al seccionado implicito</p>
+        <p>En HTML5 aparecen los elementos semanticos de seccionado explícito: </p>
+        <ul>
+            <li>section</li>
+            <li>header</li>
+            <li>footer</li>
+            <li>raw</li>
+            <li>article</li>
+            <li>aside</li>
+        </ul>
+        <h4>Header</h4>
+        <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header" title="developer.mozilla.org">
+            El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación .
+            Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que
+            aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.
+            <footer> <cite>developer.mozilla.org</cite> </footer>
+        </blockquote>
+        <h4>Footer</h4>
+
+        <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer" title="developer.mozilla.org">
+            El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de sección más
+            cercano o el elemento raíz de sección (p.e, su ancestro mas cercano article, aside, nav, section,
+            blockquote, body, details, fieldset, figure, td). Un pie de página típicamente contiene información acerca
+            de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
+            <footer>
+                <cite>developer.mozilla.org</cite>
+            </footer>
+        </blockquote>
+        </p>
+        <h4>Section</h4>
+        <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section">
+            <p class="h1">Section</p>
+            <p>El elemento de HTML section (&lt;section&gt;) representa una sección genérica de un documento. Sirve para
+                determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice
+                de contenido de un libro; un tema común y subsecciones relacionadas.</p>
+        </blockquote>
+        <p> Es, por lo tanto, una etiquéta semántica. Su funcionalidad principal es estructurar semánticamente un
+            documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario
+            que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para
+            navegar rápidamente por las distintas partes.</p>
+
+        <h4>Nav</h4>
+        <p>La MDN indica que <q cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav">
+                {<cite>developer.mozilla.org</cite>}</q> esta etiqueta crea un menú de navegación
+            (https://developer.mozilla.org).
+        </p>
+        <h4>Article</h4>
+        <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/article">
+            {<cite>developer.mozilla.org</cite>} El Elemento article de HTML (&lt;article&gt;) representa una
+            composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a
+            distribuir de forma <em>independiente o reutilizable</em> , por ejemplo, en la sindicación. Podría ser un
+            mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un
+            usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido
+            <footer>developer.mozilla.org</footer>
+        </blockquote>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eligendi exercitationem deserunt unde odio
+            dicta porro magnam cumque accusantium sapiente, beatae autem laborum quibusdam itaque nam dolores! Facilis,
+            in soluta.</p>
+        <p>Consequatur aliquam dolores reprehenderit quaerat totam in, nihil voluptatum expedita ipsum nobis corporis
+            maiores ratione, iusto laborum optio! Dolore tenetur sit perferendis repellendus! Quis similique nemo
+            doloribus numquam veniam impedit?</p>
+        <h3>Grouping</h3>
+        <h4>Parrafos:</h4>
+        <p>p, pre, blockquote</p>
+        <p>La etiqueta pre representa parrafos preformateados</p>
+        <pre>
+        Esto tiene 
+        un formato
+    </pre>
+        <h4>Listas</h4>
+        <p>Hay tres tipos de listas en HTML</P>
+        <dl>
+            <dt>ul</dt>
+            <dd>desordenadas</dd>
+            <dt>ol</dt>
+            <dd>ordenadas</dd>
+            <dt>dl</dt>
+            <dd>de definiciones</dd>
+        </dl>
+
+        <p>Ejemplo de lista ordenada</p>
+        <ol>
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miercoles</li>
+            <li>Jueves</li>
+            <li>Viernes</li>
+            <li>Sabado</li>
+            <li>Domingo</li>
+        </ol>
+
+        <h4>Bloques neutros</h4>
+
+        <li>div</li>
+
+        <h4>Bloques nuevos en HTML5</h4>
+        <ul>
+            <li>address</li>
+            <li>main</li>
+        </ul>
+<header>
+    <h2>Elementos en linea</h2>
+</header>
+<section>
+<h3>Hiperenlaces</h3>
+<p>corresponden a la etiqueta con el atributo href para indicar la url</p>
+<ul>
+<li>absolutas</li>
+<li>Relativas al origen</li>
+<li>Relativas al documento</li>
+<li>Internas</li>
+</ul>
+<p>Ejemplo de url absoluta si accedemos al <a href="https://www.w3schools.com/html/" target="blank" rel="external">estandar en el u3c</a></p>
+
 </section>
-<footer>
-    <p>Autora: Mariangeles</p>
-</footer>
+<section>
+<h3>Test level</h3>
+<h4>Elementos en linea neutros
+</h4> 
+<ul>
+<li>span</li>
+
+</ul>
+<p>Ejemplo del uso en <span class="verde">una palabra</span> una palabra</span> </p> 
+
+<h4>Elementos claramente semánticos</h4> 
+<ul>
+<li>strong</li>
+<li>em (emphasis)</li>
+<li>sup</li>
+<li>sub</li>
+<li>small</li>
+</ul>
+<h4>Elementos con valor semantico nuevo</h4> 
+<ul>
+<li>b (bold)</li>
+<li>i (italics)</li>
+<li>u (underline)</li>
+<li>s (strike)</li>
+</ul>
+
+<h4>Elementos de tipo técnico</h4> 
+<ul>
+><li>samp (sample)</li>
+<li>code (code)</li>
+<li>kbd (keyboard)</li>
+<li>var (variebles)</li>
+<li>dfn (definition)</li>
+<li>abbr (abbr)</li>
+</ul>
+ <h4>Uso de referencias y citas</h4> 
+ <ul>
+     <li>q (quote)</li>
+     <li>cite (cite o referencia)</li>
+ </ul>
+
+<h4>Otras etiquetas semanticas de HTML5</h4> 
+<ul>
+<li>time, e.g. <time datetime="2019-12-6">día de la constitución</time>día de la constitución de este año</li>
+<li>mark marcado interactivo <mark>marcado interactivo</mark>
+     </li>
+</ul>
+
+
+
+</section>
+    </section>
+</div>
+    <footer>
+        <address> Mariangeles © &copy;</address>
+    </footer>
 </body>
+
 </html>
