@@ -18,6 +18,7 @@
         </head>
                 <body>
             <header>
+ 
                 <h1>Elementos de HTML 🙃 βα</h1>
         
                 <nav>
@@ -26,15 +27,254 @@
         <li><a href="./index.html#bloques">Bloques</a></li>
         <li><a href="./index.html#En-linea">En-linea</a></li>
         <li><a href="#">Multimedia</a></li>
+        <li><a href="./form.html">Formulario</a></li>
         
                     </ul>
                 </nav>
             </header>
-            <section>
+<div class="content content-wrapper">
+    <main>
+            <section id="mmedia">
                 <header>
-    <h1>Multimedia</h1> 
-            </header>
+    <h2>Elementos embebidos multimedia</h2> 
+    </header>
+    <p>Veremos como utilizar:</p> 
+    <ul>
+    <li>Imágenes
+        <ul>
+            <li>jpg</li>
+            <li>gif</li>
+            <li>png</li>
+            <li>svg</li>
+         </ul>
+    </li> 
+    <li>Video y Audio
+        <ul>
+        <li>mp4</li>
+        <li>ogg</li>
+        <li>webm</li>
+        </ul>
+    </li>   
+     <li>Elementos de navegación gráficos</li> 
+    </ul>
+<h3>Imagenes</h3>
+<img src="./assets/Mono.jpg" alt="Mono riendo">
+<p>mono riendo</p> <!-- si pones un párrafo el ordenador no lo va a entender -->
+<img src="./assets/Oso.png" alt="Oso grande">
+<figure>
+    <img src="./assets/tropical-sunrise.webp" alt="Amanecer tropical">
+    <figcaption>Amanacer tropical
+
+    </figcaption>
+</figure>
+<img src="./assets/logo.svg" alt="logos svg">
+<h3>Video y Audio</h3>
+<p>Los videos pueden preceder de una fuente externa como youtube</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GxQjx7FkmNA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Los videos también puede venir de una fuente interna</p>
+<!-- video src="./assets/Ghost_in_the_Shell_Opening.mp4"> Para que mis videos no sean de apple, entonces todos los videos los tengo que tener en el doble formato</video> -->
+<video controls>
+<source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webm">
+    <source src="./assets/Ghost_in_the_Shell_Opening.mp4" type="video/mp4">
+</video>
+<h3>Elementos de navegación gráficos</h3>
+<p>Los SVG se pueden tratar como documentos en lugar de como imagenes</p>
+<embed src="./assets/logo.svg" type="image/svg+xml">
+    <h3>Elementos audio</h3>
+    <p>Elementos audio mp3</p>
+    <audio src="./assets/Boccherini_Concerto_478-1.mp3" controls></audio>
 </section>
+    </main>
+<section id="doc_html">
+    </section>
+    <header>
+        <h2> El documento</h2>
+        <section id="metadados">
+            <h2>Metadatos</h2>
+        </section>
+        <section id="Bloques"> 
+        </section> 
+    <h2>Elementos en bloque</h2>
+</header>
+<section id="sectioning">
+<header>
+    <h3>Sectioning</h3>
+</header>
+   <p>Antes de <abbr title="Hyper Text Markup Language 5">HMTL5 </abbr> : body, los encabezados (h1...h6) daban lugar al seccionado implicito</p>
+<p>En HTML5 aparecen los elementos semanticos de seccionado explícito: </p>
+<ul>
+    <li>section</li>
+    <li>header</li>
+    <li>footer</li>
+    <li>raw</li>
+    <li>article</li>
+    <li>aside</li>
+</ul>
+<h4>Header</h4>
+<blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header" title="developer.mozilla.org">
+    El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación .
+    Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que
+    aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.
+    <footer> <cite>developer.mozilla.org</cite> </footer>
+</blockquote>
+<h4>Footer</h4>
+
+<blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer" title="developer.mozilla.org">
+    El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de sección más
+    cercano o el elemento raíz de sección (p.e, su ancestro mas cercano article, aside, nav, section,
+    blockquote, body, details, fieldset, figure, td). Un pie de página típicamente contiene información acerca
+    de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
+    <footer>
+        <cite>developer.mozilla.org</cite>
+    </footer>
+</blockquote>
+<h4>Section</h4>
+<blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section">
+    <p class="h1">Section</p>
+    <p>El elemento de HTML section (&lt;section&gt;) representa una sección genérica de un documento. Sirve para
+        determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice
+        de contenido de un libro; un tema común y subsecciones relacionadas.</p>
+</blockquote>
+<p> Es, por lo tanto, una etiquéta semántica. Su funcionalidad principal es estructurar semánticamente un
+    documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario
+    que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para
+    navegar rápidamente por las distintas partes.</p>
+
+<h4>Nav</h4>
+<p>La MDN indica que <q cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav">
+        {<cite>developer.mozilla.org</cite>}</q> esta etiqueta crea un menú de navegación
+    (https://developer.mozilla.org).
+</p>
+<h4>Article</h4>
+<blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/article">
+    {<cite>developer.mozilla.org</cite>} El Elemento article de HTML (&lt;article&gt;) representa una
+    composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a
+    distribuir de forma <em>independiente o reutilizable</em> , por ejemplo, en la sindicación. Podría ser un
+    mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un
+    usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido
+    <footer>developer.mozilla.org</footer>
+</blockquote>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eligendi exercitationem deserunt unde odio
+    dicta porro magnam cumque accusantium sapiente, beatae autem laborum quibusdam itaque nam dolores! Facilis,
+    in soluta.</p>
+<p>Consequatur aliquam dolores reprehenderit quaerat totam in, nihil voluptatum expedita ipsum nobis corporis
+    maiores ratione, iusto laborum optio! Dolore tenetur sit perferendis repellendus! Quis similique nemo
+    doloribus numquam veniam impedit?</p>
+<h3>Grouping</h3>
+<h4>Parrafos:</h4>
+<p>p, pre, blockquote</p>
+<p>La etiqueta pre representa parrafos preformateados</p>
+<pre>
+Esto tiene 
+un formato
+</pre>
+<h4>Listas</h4>
+<p>Hay tres tipos de listas en HTML</P>
+<dl>
+    <dt>ul</dt>
+    <dd>desordenadas</dd>
+    <dt>ol</dt>
+    <dd>ordenadas</dd>
+    <dt>dl</dt>
+    <dd>de definiciones</dd>
+</dl>
+
+<p>Ejemplo de lista ordenada</p>
+<ol>
+    <li>Lunes</li>
+    <li>Martes</li>
+    <li>Miercoles</li>
+    <li>Jueves</li>
+    <li>Viernes</li>
+    <li>Sabado</li>
+    <li>Domingo</li>
+</ol>
+
+<h4>Bloques neutros</h4>
+
+<li>div</li>
+
+<h4>Bloques nuevos en HTML5</h4>
+<ul>
+    <li>address</li>
+    <li>main</li>
+</ul>
+<header>
+<h2>Elementos en linea</h2>
+</header>
+<section id="en_linea">
+<h3>Hiperenlaces</h3>
+<p>corresponden a la etiqueta con el atributo href para indicar la url</p>
+<ul>
+<li>absolutas</li>
+<li>Relativas al origen</li>
+<li>Relativas al documento</li>
+<li>Internas</li>
+</ul>
+<p>Ejemplo de url absoluta si accedemos al <a href="https://www.w3schools.com/html/" target="blank" rel="external">estandar en el u3c</a></p>
+
+</section>
+<section>
+<h3>Test level</h3>
+<h4>Elementos en linea neutros
+</h4> 
+<ul>
+<li>span</li>
+
+</ul>
+<p>Ejemplo del uso en <span class="verde">una palabra</span> una palabra</span> </p> 
+
+<h4>Elementos claramente semánticos</h4> 
+<ul>
+<li>strong</li>
+<li>em (emphasis)</li>
+<li>sup</li>
+<li>sub</li>
+<li>small</li>
+</ul>
+<h4>Elementos con valor semantico nuevo</h4> 
+<ul>
+<li>b (bold)</li>
+<li>i (italics)</li>
+<li>u (underline)</li>
+<li>s (strike)</li>
+</ul>
+
+<h4>Elementos de tipo técnico</h4> 
+<ul>
+><li>samp (sample)</li>
+<li>code (code)</li>
+<li>kbd (keyboard)</li>
+<li>var (variebles)</li>
+<li>dfn (definition)</li>
+<li>abbr (abbr)</li>
+</ul>
+<h4>Uso de referencias y citas</h4> 
+<ul>
+<li>q (quote)</li>
+<li>cite (cite o referencia)</li>
+</ul>
+
+<h4>Otras etiquetas semanticas de HTML5</h4> 
+<ul>
+<li>time, e.g. <time datetime="2019-12-6">día de la constitución</time>día de la constitución de este año</li>
+<li>mark marcado interactivo <mark>marcado interactivo</mark>
+</li>
+</ul>
+
+
+
+</section>
+<aside id="publicidad">
+<p>publicidad</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi ad ea adipisci corporis maiores fugiat! Esse distinctio quasi culpa dolor assumenda? Minus eos perspiciatis fugit earum neque, eum veritatis!</p>
+</main>
+<aside id="publicidad">
+        <p>publicidad</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi ad ea adipisci corporis maiores fugiat! Esse distinctio quasi culpa dolor assumenda? Minus eos perspiciatis fugit earum neque, eum veritatis!</p>
+    </aside>
+</div>
 <footer>
         <address> Mariangeles © &copy;</address>
     </footer>

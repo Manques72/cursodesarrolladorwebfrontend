@@ -16,3 +16,16 @@ margin-right: 2rem;
 
 .verde { color: cadetblue
 }
+
+img, embed {width: 45%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+video {
+width: 100%;
+
+}
