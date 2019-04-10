@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body>header {
+background-color: brown;
+color: bisque;
+padding: 2rem;
+
+}
+
+body>header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body>header p {
+
+    margin-bottom: 0;
+    margin-top: 0;
+} /* hay que ir probando hasta que a tí te guste, la distancia */
+
+/* .content-wrapper {
+margin: 2rem;
+} */
+
+body>div {
+    margin: 2rem
+}
+body>footer {
+    background-color: brown;
+    color: bisque;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center
+       
+}
