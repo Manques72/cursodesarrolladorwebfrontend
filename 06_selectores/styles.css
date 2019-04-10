@@ -1,0 +1,25 @@
+/* Selector de descendientes : operador es el espacio, este es el que mas se usa para 
+crear espacios de nombres */
+
+section p {
+    color: brown
+}
+
+/* Selector de hijo : operador > */
+
+section>p {
+    color: darkgreen
+}
+
+/* Selector de hermanos : operador Alt Gr4 y un espacio ~  se llama virguililla
+no se usa apenas*/
+
+div~p {
+    color: darkblue
+}
+/* Selector de hermanos adyacentes : operador + no se usa apenas*/
+
+div+p {
+
+    color: darkgoldenrod
+}

@@ -1,0 +1,45 @@
+/* Selector de etiqueta y agrupados */
+
+
+h1, h2 {
+    color: brown
+}
+
+h1 {
+    font-size: 2rem:
+}
+
+h2 {
+    
+    font-size: 1.5rem
+}
+p {
+    color: darkgreen
+}
+
+
+/* Selectores de id
+Buena práctica: no usar los id se reservan para javascript
+*/
+
+#p01 {
+
+    color: crimson
+}
+
+/* Selectores de clase LOS MEJORES PARA CSS poner class*/
+
+.resaltado {
+    
+    color: darkblue
+}
+
+/* input {
+    color: darkorange } saldrían todos los inputs y no queremos pondríamos name que serían los nombres de 
+    atributo */
+
+    [name="nombre"] {
+        background: honeydew}
+
+    [required="required"] {
+        border-color: darkred}
