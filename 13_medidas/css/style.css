@@ -1,0 +1,13 @@
+/* section {font-size: 0.9em;} div {font-size: 0.9em;} Si pusieramos un em en el p cambiaria a mas pequeña porque coge todos los valores de section y div pero sin embargo si lo pongo en rem no mejor trabaja en rem */
+
+p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem; /* Los em son proporcionales a la letra del p, si no lo tengo mejor rem porque no se calcula por el p y así no cambia el tipo de letra */
+     /* em significa que es el standar de los navegadores
+    si quiero cambiarlo 16px habría un problema de accesibilidad
+    si no veo bien la pongo mas grande en el navegador y no podría 
+    luego cambiarlo a mas grande porque es un valor absoluto mejor ems o rems */
+    padding: 2em; /* en este caso no me influenciaría mejor en letras siempre en em o rem no usar en número */
+}
+

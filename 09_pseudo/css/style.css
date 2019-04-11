@@ -1,0 +1,59 @@
+
+section>p::first-letter {
+font-size: 4rem;
+}
+aside p::first-line {
+
+    font-size: 1.1rem;
+    font-weight: bold
+}
+
+section div p::before {
+content: "!!"
+
+}
+p:hover {
+    color: brown
+}
+
+a:visited {
+color: blueviolet
+    
+}
+
+/* section p:nth-child(1) {
+
+    color: blue
+} */
+
+section p:nth-of-type(1) {
+
+    color: blue
+}
+
+/* * {
+
+    display: inline
+
+} */
+
+body {
+font-family: 'Source Sans Pro', sans-serif;
+border: 1px solid
+}
+
+/* * {
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid
+    } no se usa, La fuente sí se hereda pero el borde no */ 
+header {
+
+    font-family: 'Fredoka One', cursive;
+}
+* {
+    color: black
+}
+
+:not(p) {
+    color: aqua
+}

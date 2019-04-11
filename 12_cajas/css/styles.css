@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+} /* si pones esto así debería de ponerlo en toda la hoja, no se descolocan las cosas
+border-box considera los tamaños que queramos, quiero mas padding o no quiero borde
+y ya te lo hace solo con content-box se recolaban las cosas pero ahora ya no
+solo tengo que dar los margenes en porcentanje */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cuadrados p { 
+    /*  margin: 1rem; */
+    /* margin: calc(calc(100%-calc(15*5))/6); */
+    margin: calc(calc(100% - calc(15%*5))/10);
+    padding: 1rem;
+    background-color: coral;
+    border: 1px solid;
+    display: inline-block;
+    width: 15%;
+    float: left;
+
+    /* El 1 es el contenido todo lo que rodea al 1
+    es el padding y el border: 1px solid te va a salir en negro
+    pero le podrías poner cualquier color, los margenes solo superior e inferior
+    se colapsa, pero nunca los suma, ¿qué pasa con los margenes dcho e izdo cambiando el display en
+    vez de todo en bloque o todo en línea un display inline-block es ir viendo para que no colapsen
+    otra cosa para que no colapsen width: 10% y float: loft*/
+}
+
+.clearfix {
+
+    clear: both;
+}
+
+.real {
+
+    margin: 2rem
+
+}
+.real p:{
+
+    float: left;
+    width: 33,33%;
+    /* width: calc(100%/3); */
+
+}
+
+.real p:not(:first-child) {
+   padding-left: 1.5rem;
+}
+   

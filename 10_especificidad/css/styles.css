@@ -1,0 +1,9 @@
+body .resaltado {
+background-color: lawngreen;
+color: black /* !important el important se pone si ya no supieramos
+qué hacer pero no está bien visto Mejor no recurrir a los ids
+el 1º es para atributos casi siempre es clases y seudoclases y el 2º es para
+ elementos y seudoelementos
+ */
+
+}
