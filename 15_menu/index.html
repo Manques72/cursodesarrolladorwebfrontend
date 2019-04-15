@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Front</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div>
+    <header class="main-header">
+        <div>
+        <h1>Selectores de CSS</h1>
+        <p>Ejemplo realista de anidamiento</p>
+    <!-- para hacer un menu hacemos una lista -->
+    <nav class="menu main-menu">
+    <ol>
+        <li><a href="#seccion1">Sección 1<!-- aquí pongo el contenido como quiero que se vea --></a></li>
+        <li><a href="#seccion2"></a>>Sección 2</a></li><!-- lo puedo mejorar para qeu este menu estuviera dentro de un nav
+        ¿necesito un div? sí pero no me diría lo que tengo dentro -->
+    </ol>
+</nav>
+</div> <!-- lo hago el div porque necesito enganchar el margen con un div no para nada mas -->
+    </header><!-- los class no tienen que ver el div el nav, una cosa es la estructura y ahora es cómo quieres
+    aplicarle los estilos, me da igual como se llame, podría crear un selector especifico por etiquetas
+¿cómo defino el nav inconfundible? quiero tenerlo identificado consturyendo el selector
+de una forma muy específica Ej: body>header>nav, class es darle un estilo y pongo una etiqueta un nombre cualquiera en 
+estilos a partir que tengo ese nombre establecido puedo decir que se le aplique a esa clase
+conjunto de reglas css -->
+
+    <div class="content-wrapper"> <!-- como quiero desplazarme por la pagina le ponemos un id -->
+    <section id="section1">
+        <header>
+        <h2>Sección 1</h2>
+        </header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit inventore dolores quos nam asperiores delectus ipsum sed similique animi. Impedit corrupti asperiores autem vero perferendis non sint, labore animi?</p>
+        <p>Fuga quaerat facere exercitationem labore molestias consequuntur, eveniet reiciendis sequi doloribus asperiores dolores odit aperiam maiores dolore autem eius nobis accusamus quia ad quidem debitis voluptas natus? Ut, ducimus hic?</p>
+        <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias et iure consectetur, obcaecati praesentium voluptates, quos adipisci quia quo eveniet consequatur sequi delectus laborum? Nihil quasi voluptas voluptates nesciunt.</p>
+        <p>Aut facilis quas cum, nobis sed animi tempora, harum, repellendus ipsum dolorum enim? Nostrum temporibus rem ipsum odit dignissimos, enim corrupti ipsa praesentium quam cum, unde culpa. Qui, expedita rerum.</p>
+        </div>
+        <p>Quos doloribus dicta, culpa ipsum sequi dolore iste hic recusandae odio voluptatibus illum saepe obcaecati. Quas quos magni repellendus, vitae reprehenderit voluptate, vel deleniti quae aliquam quo hic possimus error!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint atque temporibus consequatur quis, dolorem laborum impedit, consectetur veritatis, natus voluptatibus. Ipsam atque sed nostrum excepturi libero voluptatem eum expedita!</p>
+
+    </section>
+    <section>
+<header>
+        <h2>Section 2</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ducimus atque earum magni, vitae voluptatem inventore odio maiores sit aliquid impedit error sed numquam molestias qui culpa optio autem quo!</p>
+<p>Officia, dicta explicabo placeat debitis laboriosam tempora deleniti corrupti expedita. Soluta corrupti enim quisquam doloremque nisi. Aliquam vero est, cupiditate dolor harum ab commodi iusto doloribus odit placeat, cumque quos.</p>
+<p>Possimus voluptatem consequuntur nemo mollitia minus, itaque, nobis labore sed amet sunt rem dolor placeat provident numquam ratione non molestias odio quae, nisi maxime impedit consequatur doloribus! Delectus, praesentium repellendus!</p>
+<p>Voluptatem, itaque ullam nam tenetur praesentium nobis accusamus fugiat velit, reprehenderit cupiditate soluta quidem obcaecati ut? Nostrum, autem error corrupti asperiores vitae porro repudiandae culpa sapiente doloremque? Veniam, non blanditiis.</p>
+<p>Nulla repellat dolore repudiandae ab molestias quaerat delectus sit harum, laboriosam asperiores culpa, nesciunt officia qui ipsum optio nemo eius ratione earum sapiente obcaecati molestiae suscipit voluptates? Architecto, maiores reprehenderit!</p>
+<p>Molestias voluptatum esse maxime accusamus optio atque laboriosam. Quam voluptatum maiores facere quod sit? Sunt, sed quasi qui nam dignissimos voluptate impedit porro voluptatem, ea quisquam quae illum laboriosam accusantium.</p>
+</header>
+    </section>
+    <aside>
+        <header>
+            <h2>Mas información</h2>
+        </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nulla quaerat consequatur aliquam omnis voluptatum aut? Suscipit, modi praesentium! Cupiditate praesentium cumque corporis ad quisquam accusantium provident beatae, tempore quaerat?</p>
+            <p>Enim, autem! Deleniti accusantium reiciendis illum ex dolorum asperiores distinctio sequi, ea doloremque ad atque ducimus libero fugiat? Sunt rem obcaecati voluptas amet ad omnis. Repellendus quis suscipit assumenda amet.</p>
+            <footer>
+                    &copy;
+                </footer>
+    </aside>
+    </div>
+    <footer class="main-footer">
+        <address>Mari Angeles Ocaña - CIFE</address>
+        <aside class="menu social-menu">
+            <ul>
+                <li><a href="#" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#" title="Twiter"><i class="fab fa-twiter-square"</a></li>
+                <li><a href="#"title="Linkedin"></a><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"title="Github"></a><i class="fab fa-github"></i></a></li>
+            </ul>
+        </aside>
+    </footer>
+    
+</body>
+</html>
