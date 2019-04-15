@@ -1,0 +1,28 @@
+section {
+    /* position: relative; */
+}
+section p {
+padding: 1rem;
+background-color: coral
+
+}
+.relativo {
+position: relative;/* aunque parezca que no se ha movido nada hemos creado
+una capa pero si movemos de otra forma lo vamos a ver, aparecen 4 posicionmientos que
+pòdemos jugar top, es desde arriba muévete, el origen del desplazamiento, right, left y bottom
+desde arriba hacia donde tu decidas si es menos es hacia arriba y + hacia abajo 
+dejan memoria y sólo se desplaza el elemento que seleccionemos y nadie
+de los que están alrededor se mueven Coordenadas relativas a la posición*/
+top: 3rem;
+left: 3rem
+}
+.absoluto {
+    position: absolute;/*se ha creado una nueva capa y este no deja memoria se movería todo
+    se colocaría todo, lo absoluto se reajusta toma como origen de coordenas el primer padre o borde, margen
+    si lo saco el p del section y pongo position relative lo miraría
+    desde el section, si no movemos nada se mueve desde el body que es el margen del body
+    o el padre último*/
+    top: 3rem;
+    left: 3rem;
+    
+}
