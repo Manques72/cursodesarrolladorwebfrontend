@@ -1,5 +1,12 @@
 /* section {font-size: 0.9em;} div {font-size: 0.9em;} Si pusieramos un em en el p cambiaria a mas pequeña porque coge todos los valores de section y div pero sin embargo si lo pongo en rem no mejor trabaja en rem */
-
+section {
+    font-size: 0.8em;
+    background-color: bisque;
+    min-height: 80vh
+    /* height: 80vh; /* esto sería el 80% */overflow: scroll si pongo hidden no se ve, si pongo scroll o auto
+    por lo menos se extiende con la barra porque sino traspasará el parrafo
+    poner min-height*/
+}
 p {
 
     font-family: Arial, Helvetica, sans-serif;
@@ -11,3 +18,9 @@ p {
     padding: 2em; /* en este caso no me influenciaría mejor en letras siempre en em o rem no usar en número */
 }
 
+.target:hover+.efecto {
+    /*text-indent: 2rem;*/
+color: brown}
+
+/* vh vw nos vamos al caniuse para ver los navegadores tendríamos que hablar
+para el height sería con vh y no con %*/
