@@ -1,9 +1,12 @@
+*, *::after, *::before, *:after, *:before {
+    box-sizing: border-box
+} /* para el tema del margen y que no se nos vaya todo te lo recalcula solo y habría que poner los after y before por si acaso*/
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Slabo 27px', serif;
-    
-}
+    }
 
 .main-header {
 background-color: brown;
@@ -25,11 +28,17 @@ position: relative;
 
     margin-bottom: 0;
     margin-top: 0;
+    display: none;
 } /* hay que ir probando hasta que a tí te guste, la distancia */
 
 /* .content-wrapper {
 margin: 2rem;
 } */
+
+.main-header:hover {
+    /* display: initial; */
+    visibility: initial
+}
 
 .main-menu {
 border: 1px solid;
@@ -42,17 +51,16 @@ right: 1rem; /*necesitaría un contenedor haría un div*/
 .menu ol, .menu ul {
     list-style: none;
     margin: 0;
-   
-border: 1px solid;
+   border: 1px solid;
 border-radius: 5px;
 width: fit-content;
-position: absolute; /* con absolute no lo muevo tengo que poner luego top, right, etc*/
+position: absolute; /* con absolute no lo muevo tengo que poner luego top, right, etc */
 top: 2px;
-right: 1rem; /*necesitaría un contenedor haría un div*/
+right: 1rem; /* necesitaría un contenedor haría un div */
 
-} /* no hace falta poner class a los header o parrafos porque solo hay 1*/
-/* tengo que estructurar todos los main menus*/
-/* si le quiero poner un borde: border: 1px*/
+} /* no hace falta poner class a los header o parrafos porque solo hay 1 */
+/* tengo que estructurar todos los main menus */
+/* si le quiero poner un borde: border: 1px */
 
 .main-menu ol { 
     list-style: none;
@@ -75,7 +83,31 @@ display: block;
 padding: 1rem;
 } /* el a es para el menu y que herede el color de su padre*/
 .content-wrapper {
-    margin: 2rem
+    margin: 2rem;
+    /* esta es una opción ponemos la otra opcion:overflow: auto; */
+}
+
+.clearfix {
+    clear: both;
+    margin-bottom: 2rem
+} /* para que no flote nadie por eso se pone el clearfix */
+
+
+.main-content {
+width: 70%;
+float: left;
+background-color: bisque;
+padding-left: 1rem;
+padding-right: 1rem
+} /* son las sections la parte principal de mi página */
+
+.main-aside {
+width: 30%;
+float: left;
+padding-left: 1rem;
+background-color: rgb(157, 157, 182);
+padding-left: 1rem;
+padding-right: 1rem
 }
 body>div {
     margin: 2rem
@@ -86,7 +118,7 @@ body>div {
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center
-       
+     
 }
 
 .social-menu{
