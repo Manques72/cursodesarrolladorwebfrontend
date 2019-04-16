@@ -1,0 +1,65 @@
+img {
+    /*width: fit-content; su imagen coge su tamaño no hace falta ponerlo
+    a mí solo me interesa poner el tamaño máximo*/
+    max-width: 100%;
+} /* width: 100% no ponerlo así si no lo que pone porque sino el tamaño
+de la foto se quedaría mas alla del tamaño que tiene, podía haber puesto solo img y ponerlo todo al 50% pero bueno a veces
+viene bien por si acaso aunque no se ponen muchos tamaños*/
+/* img es etiqueta y no hace falta poner el punto y la image-wrapper es una clas*/
+
+.image-wrapper-50 {
+    width: 50%;
+    float: right;
+    margin-left: 1rem;
+} /*float: left;
+margin-right: 1rem;quiero jugar con diferentes contenedores lo pongo en diferentes tamaños*/
+
+.image-wrapper-25 {
+    width: 25%
+}
+.image-wrapper-75 {
+    width: 75%
+} /*pongo float a la imagen para que varíe y flote y los margenes
+que quiera dar y se pone hacia la dcha*/
+.clearfix {
+clear: both;
+border-top: 1px solid gainsboro
+
+}
+
+.fondos {
+    height: 100vh; /*esto me deja da alturas pero claro no quiero qeu me
+    lo aplique en toda la sección*/
+    /*padding: 2rem no haría falta el padding porque he creado un header en vez de ponerlo en section*/
+    background-color: #2a4fa7;/* poner esto por si acaso la imagen no carga*/
+    background-image: url(../assets/recursos/3boats.jpg) ;
+    background-repeat: no repeat; 
+/* si pongo solo esto la imagen si es muy grande me sale enorme y no se me ve el fondo completa*/
+background-size: cover;
+/*background-size: 100%;
+background-size: contain;*/
+background-blend-mode: soft-light; /*filtros y vemos el soporte con los navegadores
+background-blen-mode en caniuse hay algunos uqe no lo soportan en un 90% y sino aplicar
+los filtros en fotoshop */
+position: relative;
+}
+/*.fondos::after {
+    content: ""
+    display: block;
+    height: 100vh; 
+    background-color: #2a4fa7;
+    background-image: url(../assets/recursos/3boats.jpg);
+    background-repeat: no repeat; 
+    position: absolute;
+    background-size: cover;
+    opacity: 0.5;*/
+
+    /* como la opacidad esta en el after el otro no la hereda*/
+}
+.fondos h2 {
+    text-align: center; /*deberíamos de poder poner otro color
+    /*line-height: 100vh; para que te lo haga en línea centrada de la imagen
+    si no quiero en el centro mejor pongo un padding-top*/
+    padding-top: 25vh;
+     color: aliceblue
+}
