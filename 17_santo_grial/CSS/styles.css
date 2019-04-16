@@ -67,7 +67,7 @@ body {
 /*Layout con display table*/
 
 .content-wrapper {
-    display: table-cell;
+    display: table;
     margin: 2rem;  /* quiero que se mueva y por eso va a ser un display y sus hijos
      van a ser un table-column*/
      
@@ -84,7 +84,6 @@ body {
 .main-aside {
     display: table-cell;
     width: 30%;
-    float: left;
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: gainsboro;
