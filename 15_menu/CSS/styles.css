@@ -27,9 +27,9 @@ position: relative;
 .main-header p {
 
     margin-bottom: 0;
-    margin-top: 0;
-    display: none;
-} /* hay que ir probando hasta que a tí te guste, la distancia */
+    margin-top: 0.2rem;
+    
+} /* display: none; hay que ir probando hasta que a tí te guste, la distancia */
 
 /* .content-wrapper {
 margin: 2rem;
