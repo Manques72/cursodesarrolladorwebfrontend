@@ -22,6 +22,11 @@ const user = {
 //como son objetos son dinámicas y user.altura no se ajusta las clases y te lo puedes inventar
 
 user.altura = 179
+user.name = 'Carlos'
+
+//user = 26 daría un error si es constante no se podría cambiar, cuando cambia tipo o el valor
+//user = {}
+
 
 console.log (user)
 console.log (user.name)

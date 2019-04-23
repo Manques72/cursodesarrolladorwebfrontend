@@ -40,7 +40,8 @@ function mostrar(input) {
     console.log('El dato recibido es', input)
     console.log('El tipo del dato es', typeof input)
     console.log('---------')
-}
+}//no haría falta escribir console.log sino el nombre de mostrar y lo ejecuto las veces que necesite y siempre
+//tendría que poner los parentesis para ejecutar Ej mostrar()
 
 mostrar(mostrar)
 

@@ -8,6 +8,7 @@ let var1 = 20;
 //para usar una function ademas de prueba habría que ejecutarla y entonces tendre que nombrarla de nuevo
 //no se accede nunca a las variables globales desde las funciones es mala practica aunque funcione
 //lo normal es que sea independiente del contexto que la ejecute
+//mala practica no es pura, tiene efectos colaterales no devuelve nada
 function prueba() {
 
     console.log(var1)

@@ -6,6 +6,12 @@ nombre = 'Pepe' // Inicializar
 let edad = 34 // Declarar e inicializar
 
 // Tipos de datos
+/* 
+En otros lenguajes hay declaración OBLIGATORIA Y EXPLÍCITA de tipos
+int x -> variable x de tipo entero sin valor 
+En JS los tipos son débiles: no podrían cambiar, no se declaran explícitamente, son implicitos al valor, Ej x=23, se da por hecho que es un número no lo digo explicitamente porque ya lo vemos
+ y dinámicos: pueden cambiar, en JS
+*/
 
 // undefined
 let data
@@ -24,7 +30,7 @@ data = 35
 console.log(data)
 console.log(typeof data)
 
-// booleans
+// booleans, es un dato lógico Ej: Soy hombre o mujer
 data = true
 data = false
 console.log(data)
