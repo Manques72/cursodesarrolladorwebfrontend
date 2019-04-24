@@ -70,3 +70,15 @@ let mensajes =[
 
 console.log(mensajes[i])
 
+// && Andpersan es y and
+// || or
+// ! not
+let x = 23
+//!x esto sería not x es falso, o sea todo lo que no sea 23 y !!x es verdadero
+//!x poner un not lo convierte totalmente en booleano no hacen falta parenteris
+
+var1 && var2 || var3 //¿qué se evalua antes el y o el o? se pueden poner los parentesis
+// por ejemplo (var1 && var2) || var3 si no me acuerdo pongo al que me convenga aquí sería la y
+// y si lo pongo var1 && (var2 || var3) prevalecerá la o
+
+
