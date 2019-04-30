@@ -1,0 +1,32 @@
+/*font-family: 'Merriweather', serif;
+font-family: 'Just Another Hand', cursive;*/
+body {
+    display: flex
+}
+header {
+    background-color: skyblue;
+    
+}
+section {
+    font-size: 1em;
+    background-color: lightblue
+}
+
+p {
+    font-family: cursive;
+    background-color: aliceblue
+}
+.image-wrapper-50 {
+    width: fit-content;
+    float: right;
+    margin-left: 0.5rem;
+   }
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+aside {
+    width: 50%;
+    }
