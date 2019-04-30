@@ -1,7 +1,10 @@
 /*font-family: 'Merriweather', serif;
 font-family: 'Just Another Hand', cursive;*/
 body {
-    display: flex
+    /*display: flex;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
 header {
     background-color: skyblue;
