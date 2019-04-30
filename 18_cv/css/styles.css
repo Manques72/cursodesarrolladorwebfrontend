@@ -4,14 +4,17 @@ body {
     display: flex;
     margin: 1rem;
     padding: 0;
+    
     }
 header {
     background-color: skyblue;
+    width: 100%;
     
 }
 section {
     font-size: 1em;
-    background-color: lightblue
+    background-color: lightblue;
+    
 }
 
 p {
@@ -19,7 +22,7 @@ p {
     background-color: aliceblue
 }
 .image-wrapper-50 {
-    max-width: 100%;
+    
     float: right;
     margin-left: 0.5rem;
    }
@@ -27,7 +30,9 @@ h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-
+img {
+    max-width: 100%
+}
 
 aside {
     width: 50%;
