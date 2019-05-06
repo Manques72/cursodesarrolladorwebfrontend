@@ -47,5 +47,5 @@ console.log(urlTemp)
 //aUrl[1]esto es un miembro del array vamos es un string
 console.log(url.split('/')[2])
 }
-//tb esta indexOf
+//tb esta indexOf, tb codigos unicode charCode y front
 main()
