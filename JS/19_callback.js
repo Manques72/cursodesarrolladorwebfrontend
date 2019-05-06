@@ -26,7 +26,7 @@
      function suma(x, y) {
      return x + y//la funcion suma esta dentro de operaciones
  }
-//si yo pusiera suma(2, 2) no me va a dar nada porque no esixte fuera de suma
+//si yo pusiera suma(2, 2) no me va a dar nada porque no existe fuera de suma
  //console.log(r) no me dara ningun resultado pq no hay ninguna variable global r
  }
  operaciones(10, 12)//esto es lo que se llama encapsular el código y por eso guardaría todo
