@@ -46,6 +46,9 @@ console.log(urlTemp)
 //let aUrl = url.split('/')
 //aUrl[1]esto es un miembro del array vamos es un string
 console.log(url.split('/')[2])
+console.log(url[12])
 }
 //tb esta indexOf, tb codigos unicode charCode y front
 main()
+//function puede ser un nº (acostumbrarnos a que el 0 significa todo minusculas y el 1 todo mayusculas y el 2 min y may), true o false
+//Siempre es comprobar y mostrar
