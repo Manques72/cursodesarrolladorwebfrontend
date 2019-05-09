@@ -50,3 +50,9 @@ vuelo2 = {
 }
 
 vuelo1.mostrar()
+//Dentro de un método aparece this que nos da la referencia del objeto en el que estamos
+//en el mundo orientado a objetos quiere que sea lo mas parecido al mundo real
+//por un lado el alumno y por otro lado los datos en el mundo que no es de objetos Ej: 35_pares.js
+//paradigma es una forma de pensar, antes pensaba por un lado hay funciones y por otro lado datos pero ahora hay objetos
+//objeto eran acumuladores de datos y ahora lo vamos a integrar en el método
+//usar constructores para poder crear objetos
