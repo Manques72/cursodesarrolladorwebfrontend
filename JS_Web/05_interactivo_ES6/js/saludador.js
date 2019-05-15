@@ -9,7 +9,7 @@ export class Saludador {
         this.aQuien = ''
         this.msg = [`Hola ${this.aQuien}`, `Adios ${this.aQuien}`]
         //para que salga un string se pone vacío''
-    /** Seleccionar nodos del DOM, este nodo del DUM lo pongo o queryselector o addenventlistener
+    /** Seleccionar nodos del DOM, este nodo del DUM lo pongo o queryselector o addenventlistener,
      * queryselector no tiene sentido ponemos querySelector
      */
     this.inNombre = document.querySelector('#in-nombre')
