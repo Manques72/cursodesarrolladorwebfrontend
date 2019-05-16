@@ -26,7 +26,7 @@ export function controller () {
     //de evento, escuchadores de evento. sino no haría nada
 
     inNombre.addEventListener('input', onInputNombre)// o se puede llamar oninput, cambios etc. es la que llama a la funcion el primer evento, 2º es un callback es un manejador del evento es asincronico
-    btnBorrar.addEventListener('click', borrar)
+    btnBorrar.addEventListener('click', borrar)//si tengo un boton tengo que tener un evento click
 
     function onInputNombre() {
         //cuando el usuario esta escribiendo escribe en el output y hacemos un console dir

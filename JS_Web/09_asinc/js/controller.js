@@ -52,11 +52,11 @@ export function controller () {
     function leerDatos() {
         let i  //como 1º ejecuto let i y como luego sería mostrar Datos sería undefined
         //mostrarDatos habrá que meterlo dentro oprque sino no me lo reconoce
-        //lectura síncrona
-        //i = 33
+        //lectura síncrona: se supone que accedemos a un servidor y eso no existe que no tarda nada
+        //i = '33jksl7741'
         //lectura asíncrona
         setTimeout(() => {
-            i = 33
+            i = '33jksl7741'
             mostrarDatos()
         }, 1000);
         //el parametro siempre tiene que ser una funcion

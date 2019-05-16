@@ -7,7 +7,21 @@
  */
 
  /*function mostrarResultado(x=0, y=0, operacion)//parametros x e y y un callback que es lo que puedo llamar
- //en vez de callback lo voy a llamar operación o z
+ //en vez de callback lo voy a llamar operación o z, la operacion se la tenemos que dar como un callback
+ //mostrarResultado(11, 12, 'multiplica')esto no me daría nada porque operacion esta pasado como callback
+ //multiplica no sabe lo que quiere hacer, yo quiero desde fuera que me lo multiplique
+ //[1,2,3,4,6].map(x=>x)al map le tendrías que decir que hace
+ //esto sería un array pero no me daría nada
+ //let aDatos = [1,2,3,4,6] y let aClon = aDatos.map(x=>x*x)esto me devolvería el array de los cuadrados
+ //map solo que sabe hacer nada, necesita uqe le digas lo que tiene que hacer con un callback
+ ///mostrarResultado(11, 12, 'multiplica', multiplica) habra una function multiplica(x,y) {return x*y} y el multiplica
+ //no lleva () porque no queremos que se ejecute y así se hace un callback
+ //si yo solo quiero hacer una vez function multiplica(x,y) {return x*y} la puedo hacer anónima y la pongo en multiplica porque no va
+ //a aparecer mas mostrarResultado(11, 12, 'multiplica', function multiplica(x,y) {return x*y}) yesto podemos abreviarlo con el arrow
+ (x,y) => {return x*y} pero es mejor ponerlo mas abreviado y es:  y esto es un callback
+ mostrarResultado(11, 12, 'multiplica', (x,y) => x*y)
+
+
   {
       console.log(`El resultado con ${x} y ${y} es`)
       console.log(operacion(x,y))//donde pone operacion va a ser una funcion pero no está definida pero la paso
