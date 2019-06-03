@@ -1,0 +1,34 @@
+.control-group
+.control-group label, 
+.control-group input {
+    display: block; /**esto es para que lo vean uno debajo del otro y tengan un ancho del 100%*/
+
+
+}
+
+/**queremos qeu el label tenga un margen 1rem*/
+
+.control-group label {
+    margin-bottom: 1rem
+}
+
+.control-group input {
+    border: 0;
+    border-bottom: 1px solid gray;
+    line-height: 1.2rem
+}
+
+/*body>section:nth-of-type(1)>div:nth-of-type(1)>input {
+    background-color: coral
+}*/
+
+body>section:nth-child(2)>div:nth-child(2)>input {
+    background-color: coral
+
+}
+
+section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
