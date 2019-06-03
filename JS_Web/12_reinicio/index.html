@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS en la Web</title>
+    <!--el script es el boostrap para que nos lo linkee y tiene que haber un type module-->
+    <script src="./js/bootstrap.js" type="module"></script>
+    <!--hemos definido que se llame controller, manejador del evento DOMContentLoaded
+    y como quiero tener un fichero a parte lo pongo pero no es necesario ni que se llame controller
+sino podría poner en el boostrap document.addEventListener('DOMContentLoaded', y luego poner el nombre de una función
+como tal no tiene nada de especial si la pones se convierte manejador de eventos el controller, app, main como se llame da igual
+es un manejador de eventos-->
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<header>
+    <!--para que el usuario pueda tocar un boton como input o output
+    pondré id donde tenga interactividad entrada o salida de datos
+ademas está bien porque en css no se usa por ejemplo h2-->
+    <h1>JS en la Web</h1>
+</header>
+<section>
+    <h2>Datos del usuario</h2>
+    <div class="control-group" id="divNombre">
+        <label for="inNombre">Nombre</label>
+        <input type="text" name="nombre" id="inNombre">
+    </div>
+    <div class="control-group" id="divNombre">
+            <label for="inCorreo">Correo</label>
+            <input type="text" name="nombre" id="inCorreo">
+        </div>
+    <button type="button" id="btnSaludar">Saludar</button>
+    <button type="button" id="btnBorrar">Borrar</button>
+</section>
+<!--los elementos interactivos los botones tienen que tener su id-->
+<section class="saludo">
+    <output id="outSaludo"></output>
+    <!--el output es igual que un parrafo no le cambia nada y necesito que si quiero una salida
+    sería con id el prefijo es para las salidas y las entradas por eso ponemos iNombre
+aquí solo me interesan solo dos nodos y son inNombre y outSaludo-->
+</section>
+<body>
+    
+</body>
+</html>
