@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de animales</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1> Lista de Animales</h1>
+    </header>
+    <section>
+        <div class='new'>
+            <div class="control-group">
+                <label for="animal">Nuevo animal</label>
+                <div class='flex'>
+                    <input type="text" name="animal" id="inAnimal">
+                    <button type='button' id="btnAdd" title="Añadir animal"><i class="fas fa-plus-circle"></i></button>
+                    <button type='button' id="btnClear" title="Borrar todos los animales"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+         <!--etiqueta nueva para sacar una ventana emergente de alerta se llama model
+        le vamos a poner un id porque querremos manejarlo desde JS aunque solo haya un dialog
+    para que el boton funcione hay que ponerle un id=btnBorrarSi, dialog me hace que lo vea no que no exista aunqeu no 
+se vea, los nodos de los botones son invisibles pero existen en el DUM-->
+        <dialog id= "dlgConfirmarONoElBorrado">
+            <p>¿Estás seguro de borrar este animal?</p>
+            <button type="button" id="btnBorrarSi">Si</button>
+            <button type="button" id="btnBorrarNo">No</button>
+
+
+        </dialog>
+        <div class="flex output">
+                <div class='lista'>...</div>
+                <div class='tabla'>...</div>        
+        </div>
+       
+    </section>
+    <footer>
+        <address>Alejandro Cerezo</address>
+    </footer>
+</body>
+</html>

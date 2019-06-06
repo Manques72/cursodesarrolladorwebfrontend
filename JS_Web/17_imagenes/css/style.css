@@ -1,0 +1,11 @@
+section {
+    display: flex;
+}
+
+figure {
+    width: 50%;
+}
+
+img {
+    width: 100%
+}
