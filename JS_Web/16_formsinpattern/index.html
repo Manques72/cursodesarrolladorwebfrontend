@@ -19,21 +19,32 @@
                 <div class="control-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nombre" 
-                        placeholder="Escribe tu nombre" requiredzz minlength="3">
+                        placeholder="Escribe tu nombre" required minlength="3">
                 </div>
                 <div class="control-group">
                     <label for="apellido">Apellidos</label>
                     <input type="text" name="apellido" id="apellido" 
-                        placeholder="Escribetus apellidos" requiredzz minlength="3">
+                        placeholder="Escribetus apellidos" required minlength="3">
                 </div>
+                <div class="control-group">
+                    <label for="dni">DNI</label>
+                    <input type="text" name="dni" id="dni" placeholder="Escribe tus DNI"requiredzz>
+                </div>  
                 <div class="control-group">
                     <label for="email">Correo</label>
                     <input type="email" name="email" id="email" placeholder="Correo" requiredzz>
                 </div>    
                 <div class="control-group">
                     <label for="passwd">Contraseña</label>
-                    <input type="password" name="passwd" id="passwd" requiredzz maxlength="4">
+                    <input type="password" name="passwd" id="passwd" required pattern title=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$>
+                    <!--required maxlength="4" lo de pattern title lo he sacado de la pagina: regeslib.com buscando password-->
+                
                 </div>
+                <div class="control-group">
+                    <label for="date">FECHA</label>
+                    <input type="text" name="date" id="date" placeholder="Escribe la fecha"requiredzz>
+                </div>  
+                
                 <div class="control-group">
                     <label for="coments">Comentarios</label>
                     <textarea name="coments" id="coments" cols="30" rows="5"></textarea>
@@ -43,7 +54,7 @@
                 <legend>Condiciones</legend>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi expedita voluptatibus quisquam praesentium vero nemo laborum ratione. Autem esse voluptates quasi ad, voluptatem repellendus illo aperiam amet reprehenderit quod velit.</p>
                 <div class="check-group">
-                    <input type="checkbox" name="aceptado" id="aceptado" requiredzz>
+                    <input type="checkbox" name="aceptado" id="aceptado" required>
                     <label for="aceptado">Estoy deacuerdo con las condiciones</label>
                 </div>
                 <div class="check-group">
@@ -55,7 +66,7 @@
                 <legend>Datos del curso</legend>
                 <div class="control-group">
                     <label for="curso">Curso</label>
-                    <select name="curso" id="curso" requiredzz>
+                    <select name="curso" id="curso" required>
                         <option value="">&nbsp;</option>
                         <optgroup label="Front">
                             <option value="HTML">HTML</option>
@@ -70,7 +81,7 @@
                 </div>
                 <!-- <div class="control-group">
                     <label for="turno">Turno</label>
-                    <select name="turno" id="turno" requiredzz>
+                    <select name="turno" id="turno" required>
                         <option value="">&nbsp;</option>
                         <option value="M">Mañana</option>
                         <option value="T">Tarde</option>
@@ -80,7 +91,8 @@
     
                 <div class="radio-group">
                     <p>Turno</p>
-                    <input type="radio" name="turno" id="mañana" value="M" requiredzz>
+                    <input type="radio" name="turno" id="mañana" value="M" required>
+                    <!--con que uno de la familia lleve required con eso vale para que en el formulario salga-->
                     <label for="mañana">Mañana</label>
                     <input type="radio" name="turno" id="tarde" value="T">
                     <label for="tarde">Tarde</label>
@@ -90,7 +102,7 @@
 
                 <div class="radio-group">
                     <p>Sede</p>
-                    <input type="radio" name="sede" id="madrid" value="MD" requiredzz>
+                    <input type="radio" name="sede" id="madrid" value="MD" required>
                     <label for="madrid">Madrid</label>
                     <input type="radio" name="sede" id="barna" value="BN">
                     <label for="barna">Barcelona</label>
@@ -112,7 +124,7 @@
     </dialog>
     <footer>
         <address>
-            Alejandro Cerezo
+            Mari Angeles
         </address>
     </footer>
 </body>
