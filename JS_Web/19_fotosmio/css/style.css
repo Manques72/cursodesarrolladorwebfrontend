@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+header, section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header {
+    justify-content: space-around;    
+}
+
+section {
+    justify-content: center;
+}
+
+section figure {
+    margin: 0;
+    width: 20%;
+    padding: 1rem;
+    text-align: center;
+}
+
+dialog {
+    border: none;
+    background-color: bisque;
+    border: 4px
+}
+
+dialog::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+
+
+    
+}
+
+dialog div {
+    margin: 1rem 0;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
