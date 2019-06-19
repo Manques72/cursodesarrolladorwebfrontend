@@ -18,7 +18,7 @@ fdescribe('Aprendiendo Jasmine', () => {
     });
     it('should throw error if n=-5'), () => {
         const n = -5;
-        expect(factorial(n)).toThrow();
+        expect(factorial.bind(n)).toThrow('InvalidNumber');
 
     })
 
