@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-//aqui tambien lo quito porque ya no se cargan los componentes
 
 const routes: Routes = [
-  //{ path: 'home', component: HomeComponent },
+  // { path: 'home', component: HomeComponent },
   { path: 'home', loadChildren: './home/home.module#HomeModule' },
- // { path: 'tareas', component: TareasComponent },
+  // { path: 'tareas', component: TareasComponent },
   { path: 'tareas', loadChildren: './tareas/tareas.module#TareasModule' },
-  //{ path: 'contactos', component: ContactosComponent },
+  // { path: 'contactos', component: ContactosComponent },
   { path: 'contactos', loadChildren: './contactos/contactos.module#ContactosModule' },
-  //{ path: 'libros', component: LibrosComponent },
+  // { path: 'libros', component: LibrosComponent },
   { path: 'libros', loadChildren: './libros/libros.module#LibrosModule' },
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '**', redirectTo: 'home'}

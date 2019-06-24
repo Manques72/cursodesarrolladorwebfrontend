@@ -1,0 +1,28 @@
+<section>
+  <header>
+    <h2>
+      Componente Saludar
+    </h2>
+  </header>
+  <div class='control group'>
+    <label for="nombre">{{mensaje}}</label>
+      <!--[] operador de propiedades el ngModel es parte del modulo de angular dedicado a los formularios
+      -->
+    <input type="text" name='nombre' id='nombre' placeholder="mensaje"
+    
+    [(ngModel)] = "nombre">
+  </div>
+  <!--El operador de doble binding
+  (input)="nombre = $event.target.value" [value]="nombre"> en vez de escribir esto se escribe un operador
+[()]-->
+  <div class='control group'>
+    <!--{{}} operador de eventos -->
+    <button (click)= "onClickBorrar($event)" type="button">Borrar</button>
+  </div>
+  <footer>
+  <!--{{}} operador de interpolacion de expresiones -->
+  <p>Hola {{nombre == 'amigo' ? nombre : nombre.toUpperCase()}}</p>
+</footer>
+
+</section>
+
