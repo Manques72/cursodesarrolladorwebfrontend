@@ -2,8 +2,33 @@
 *{
     box-sizing: border-box;
 }
+.component {
+    margin-top: 2rem;
+    width: 50%;
+}
+.component header {
+    color: brown;
+    background-color: bisque
+}
 
-body {
+.component h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.component footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: aqua
+}
+.component body {
     margin: 0;
     padding: 0;
+}
+.control-group label,
+.control-group input {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem
 }

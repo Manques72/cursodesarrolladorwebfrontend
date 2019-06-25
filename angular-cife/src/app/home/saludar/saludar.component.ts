@@ -16,7 +16,7 @@ export class SaludarComponent implements OnInit {
     this.mensaje= 'Cuando puedas, escribe tu nombre'
   }
 
-  onClickBorrar() {
+  onClickBorrar(ev: Event) {
     //borra la variable que se ha guardado
     console.log(ev);
     this.nombre = '';
