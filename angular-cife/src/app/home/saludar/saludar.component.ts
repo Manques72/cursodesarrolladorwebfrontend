@@ -12,15 +12,20 @@ export class SaludarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.nombre= 'amigo'; 
-    this.mensaje= 'Cuando puedas, escribe tu nombre'
+    this.nombre = 'amigo';
+    this.mensaje = 'Cuando puedas, escribe tu nombre';
   }
 
   onClickBorrar(ev: Event) {
-    //borra la variable que se ha guardado
     console.log(ev);
     this.nombre = '';
-    
-
   }
+
+  /* nameFormat() {
+    if (this.nombre === 'amigo' ) {
+      return this.nombre;
+    } else {
+      return this.nombre.toUpperCase();
+    }
+  } */
 }

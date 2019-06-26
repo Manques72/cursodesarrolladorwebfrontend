@@ -1,28 +1,27 @@
+
 <section class="component">
   <header>
     <h2>
-      Componente Saludar
+      Componente saludar
     </h2>
   </header>
-  <div class="control group">
-    <label for="nombre">{{mensaje}}</label>
-      <!--[] operador de propiedades el ngModel es parte del modulo de angular dedicado a los formularios
-      -->
-    <input type="text" name='nombre' id='nombre' placeholder="mensaje"
-    
-    [(ngModel)] = "nombre">
+  <div class="control-group">
+    <label for="nombre">{{ mensaje }}</label>
+    <!-- [] operador de propiedades -->
+    <input type="text" name="nombre" id="nombre" [placeholder]="mensaje"
+      [(ngModel)] = "nombre"> 
+   <!--  El operador de doble binding
+     equivalente a (input)="nombre = $event.target.value" y [value]="nombre" -->
+
   </div>
-  <!--El operador de doble binding. Equivalente
-  (input)="nombre = $event.target.value" [value]="nombre"> en vez de escribir esto se escribe un operador
-[()]-->
-  <div class="control group">
-    <!--{{}} operador de eventos -->
-    <button (click)= "onClickBorrar($event)" type="button">Borrar</button>
+  <div class="control-group">
+    <!-- () operador de eventos -->
+    <button (click)="onClickBorrar($event)" type="button">Borrar</button>
   </div>
   <footer>
-  <!--{{}} operador de interpolacion de expresiones, de doblebyeding? no se como se escribe -->
-  <p>Hola {{nombre == 'amigo' ? nombre : nombre.toUpperCase()}}</p>
-</footer>
-
+    <!-- {{}} operador de interpolación de expresiones -->
+    <p>Hola {{ nombre == 'amigo' ? nombre : nombre.toUpperCase() }}</p> 
+     <!-- <p>Hola {{ nameFormat() }} </p>-->
+  </footer>
 </section>
 

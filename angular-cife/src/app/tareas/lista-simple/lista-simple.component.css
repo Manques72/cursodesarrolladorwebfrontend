@@ -1,0 +1,19 @@
+.icon {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.completed {
+    color: brown;
+    text-decoration: line-through;
+    text-decoration-color: bisque
+}
+
+.oculto {
+
+        display: none;
+
+}

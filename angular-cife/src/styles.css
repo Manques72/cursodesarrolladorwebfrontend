@@ -2,13 +2,20 @@
 *{
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .component {
     margin-top: 2rem;
     width: 50%;
 }
+
 .component header {
     color: brown;
-    background-color: bisque
+    background-color:  bisque;
 }
 
 .component h2 {
@@ -19,16 +26,15 @@
 
 .component footer {
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-color: aqua
+    margin-bottom: 1rem;    
+    background-color: gainsboro;
+    padding: 0.5rem;
+
 }
-.component body {
-    margin: 0;
-    padding: 0;
-}
-.control-group label,
+
+.control-group label, 
 .control-group input {
     width: 100%;
     margin-top: 1rem;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }

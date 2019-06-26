@@ -1,18 +1,13 @@
-expect interface TareaIf {
+export interface TareaIf {
     nombre: string;
     isCompleted: boolean;
-
-
+    isEdited: boolean;
 }
 
-export class Tarea implements TareaIf{
+export class Tarea implements TareaIf {
     constructor(
-    public nombre: string = '',
-    public isCompleted: boolean = false
-
-    ) {
-        //this.isCompleted = false; ya lo hemos 
-            puesto arriba
-    }
-
+        public nombre: string = '',
+        public isCompleted: boolean = false,
+        public isEdited: boolean = false
+    ) {}
 }
