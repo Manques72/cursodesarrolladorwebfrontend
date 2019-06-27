@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Post } from 'src/app/models/post.model';
 
 @Component({
@@ -7,14 +7,20 @@ import { Post } from 'src/app/models/post.model';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-  
-  post: Post;
 
-  constructor() { }
+  @Input() post: Post;
+  @Input() index: number;
+  @Output() eventBorrar: EventEmitter<number>;
 
-  ngOnInit() {
-    this.post = new Post();
-    
+  constructor() {
+    this.eventBorrar = new EventEmitter();
+   }
+
+  ngOnInit() {}
+
+  onClickBorrar() {
+    this.eventBorrar.next(this.index);
+
   }
 
 }

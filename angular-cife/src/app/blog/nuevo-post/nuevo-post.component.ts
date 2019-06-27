@@ -8,20 +8,20 @@ import { Post } from 'src/app/models/post.model';
 })
 export class NuevoPostComponent implements OnInit {
 
-  post: Post; //Creo una variable, es un objeto de tipo POst, necesito un post y lo inicializo con un this
+  post: Post;
   @Output() eventGuardar: EventEmitter<Post>;
+
   constructor() {
     this.eventGuardar = new EventEmitter();
    }
 
   ngOnInit() {
-    this.post = new Post();//el post va a tener título, contenido y autor
-
-
+    this.post = new Post();
   }
-  OnClick() {
+
+  onClick() {
     this.eventGuardar.next(this.post);
-    this.post = new Post()
+    this.post = new Post();
   }
 
 }

@@ -15,6 +15,7 @@ export class ListaSimpleComponent implements OnInit {
   faEdit: IconDefinition;
   faAncla: IconDefinition;
   storageName: string;
+  isOculto: boolean;
 
   constructor(public ls: LocalStorageService) { }
 
@@ -25,6 +26,9 @@ export class ListaSimpleComponent implements OnInit {
     this.tarea = new Tarea();
     this.storageName = 'tareas';
     this.aTareas = this.ls.readStorage(this.storageName);
+    this.isOculto = false;
+
+    setInterval(() => this.isOculto = !this.isOculto, 10000);
   }
 
   onClickAdd() {
@@ -58,8 +62,8 @@ export class ListaSimpleComponent implements OnInit {
   }
 
   onSelectCheck() {
+    console.log('Click on checkbox');
     console.log(this.aTareas);
     this.ls.saveStorage(this.storageName, this.aTareas);
   }
-
 }

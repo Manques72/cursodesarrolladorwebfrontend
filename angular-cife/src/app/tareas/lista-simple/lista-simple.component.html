@@ -18,14 +18,13 @@
   <footer *ngIf="aTareas.length">
     <p>Lista de tareas</p> 
     <ul>
-      <li *ngFor="let item of aTareas; let i = index">
+      <li *ngFor="let item of aTareas; let i = index" [ngClass]="{'completed': item.isCompleted }">
         <input type="checkbox" [name]="'check'+(i+1)" [id]="'check'+(i+1)"  
           [(ngModel)] = "item.isCompleted" (click)="onSelectCheck()">
         <span [contentEditable]="item.isEdited" 
           (blur)="onBlur($event, i)">{{ item.nombre }}</span> -
         <fa-icon [icon]="faEdit" class="icon" (click)="onClickEditar(i)"></fa-icon>
         <fa-icon [icon]="faTrash" class="icon" (click)="onClickBorrar(i)"></fa-icon>
-        
       </li>
     </ul>
   </footer>

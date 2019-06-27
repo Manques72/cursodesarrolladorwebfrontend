@@ -9,11 +9,9 @@ ul {
 .completed {
     color: brown;
     text-decoration: line-through;
-    text-decoration-color: bisque
+    text-decoration-color: bisque;
 }
 
 .oculto {
-
-        display: none;
-
+    display: none;
 }
